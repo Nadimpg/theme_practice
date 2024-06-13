@@ -50,9 +50,10 @@ class ThemeController extends GetxController {
   var isDark = false.obs;
 
   ThemeData get darkTheme => ThemeData(
+    hintColor: Colors.white,
     scaffoldBackgroundColor: Colors.black54,
-    cardColor: Colors.greenAccent,
-    primaryColor: Colors.black12,
+    cardColor: Colors.blue,
+    primaryColor: Colors.orange,
     brightness: Brightness.dark,
     primaryColorDark: Colors.black12,
     appBarTheme: const AppBarTheme(
@@ -74,7 +75,7 @@ class ThemeController extends GetxController {
         fillColor: Colors.white,
         hintStyle: TextStyle(color:Colors.white,fontSize:16),
         isDense: true,
-        contentPadding:EdgeInsets.symmetric(
+        contentPadding:const EdgeInsets.symmetric(
             horizontal:12,
             vertical: 16
         ),
@@ -95,9 +96,10 @@ class ThemeController extends GetxController {
   );
 
   ThemeData get lightTheme => ThemeData(
+    hintColor: Colors.black,
     scaffoldBackgroundColor: Colors.white,
     cardColor: Colors.red,
-    primaryColor: Colors.white,
+    primaryColor: Colors.greenAccent,
     brightness: Brightness.light,
     primaryColorDark: Colors.white,
     appBarTheme: const AppBarTheme(

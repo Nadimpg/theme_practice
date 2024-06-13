@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:theme_practice/view/second_page.dart';
+import 'package:theme_practice/view/widgets/custom_text.dart';
 
 
 import '../controller/controller.dart';
@@ -59,7 +60,12 @@ class HomeScreen extends StatelessWidget {
               color: Theme.of(context).cardColor,
             ),
             SizedBox(height: 12,),
-            ElevatedButton(onPressed: (){}, child: Text('data'),style: ElevatedButton.styleFrom(backgroundColor: Theme.of(context).cardColor),)
+            ElevatedButton(onPressed: (){}, child: Text('data'),style: ElevatedButton.styleFrom(backgroundColor: Theme.of(context).cardColor),),
+            SizedBox(height: 12,),
+
+            CustomText(text: 'Nadim Hasan',color: Theme.of(context).hintColor,fontSize: 24,),
+            CustomText(text: 'nadimhasannh48@gmail.com',color: Theme.of(context).cardColor,fontSize: 24,),
+
           ],
         );
       }),
